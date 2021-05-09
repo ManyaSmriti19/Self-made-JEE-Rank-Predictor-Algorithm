@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Rank_Predictor
+{
+public:
+string predictor_response()
+{
+string viewers_report="O.K.";//fetched from interface if viewer reports
+cout<<"Rank Predictors reports its status as "<<viewers_report<<".\n";
+return viewers_report;
+}
+};
+class Admin
+{
+public:
+void admin_action(string resp)
+{
+if(resp=="O.K.")
+cout<<"Rank Predictor is working fine...";
+else
+cout<<"Rank Predictor needs maintainance..Work in Progress";
+}
+};
+int main()
+{
+Rank_Predictor r;
+Admin d;
+string response=r.predictor_response();
+d.admin_action(response);
+}
