@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+public:
+int marks;
+int choice;
+int callStudent()
+{
+cin>>marks;
+return marks;
+}
+int choiceStudent()
+{
+cout<<"Enter
+1-Common_rank,2-OBC_rank,3-SC_rank,4-ST_rank,5-PWD_rank,6-Reset
+marks,7-Search_college\n";
+cin>>choice;
+return choice;
+}
+};
+class Rank_Predictor
+{
+public:
+void Predictor_output(string a)
+{
+cout<<"You choose to view "<< a <<" rank for entered marks ";
+}
+void Reset()
+{
+cout<<"You choose to reset marks ";}
+void search()
+{
+cout<<"You wish to search colleges";
+}
+void callPredictor(int mark,int choice)
+{
+if(mark<0||mark>360)
+cout<<"Invalid marks\n";
+switch(choice)
+{
+case 1:Predictor_output("Common");
+break;
+case 2:Predictor_output("OBC");
+break;
+case 3:Predictor_output("SC");
+break;
+case 4:Predictor_output("ST");
+break;
+case 5:Predictor_output("PWD");
+break;
+case 6:Reset();
+break;
+case 7:search();
+break;
+default:
+cout<<"Invalid Choice";
+}
+}
+};
+int main()
+{
+cout<<"Enter marks\n";
+Student s;
+Rank_Predictor p;
+int mark=s.callStudent();
+int choice=s.choiceStudent();
+p.callPredictor(mark,choice);
+}
