@@ -1,0 +1,193 @@
+#include<iostream>
+using namespace std;
+class Algorithm
+{
+int rank;
+public:
+int min_rank=8401;
+int max_rank=9001;
+int Rank=(min_rank+max_rank)/2;
+string category="Common";
+int callAlgo_rank()
+{
+cout<<"Algorithm is fetching college from collegeList for";
+return Rank;
+}
+string choice()
+{
+cout<<" category "<<category<<"...\n";
+return category; //fetched
+}
+void dispCollege(string college)
+{
+cout<<"The list of college you may get on rank "<<Rank<<" for
+category "<<category<<" is: \n"<<college;
+}
+};
+class CollegeList
+{
+public:
+string college(int rank,string choice)
+{
+string r="";
+cout<<"CollegeDb has rank vs college list\n";
+if(choice=="Common")
+{
+if(rank>=7 && rank<=4669)
+r+="IIT DELHI ";
+if(rank>=1 && rank<=4018)
+r+="IIT BOMBAY ";
+if(rank>=2121 && rank<=6299)
+r+="IIT GANDHINAGAR ";
+if(rank>=366 && rank<=6578)
+r+="IIT GUWAHATI ";
+if(rank>=696 && rank<=7376)
+r+="IIT VARANASI ";
+if(rank>=632 && rank<=5342)
+r+="IIT HYDERABAD ";
+if(rank>=40 && rank<=5722)
+r+="IIT KANPUR ";
+if(rank>=1366 && rank<=6895)
+r+="IIT JODHPUR ";
+if(rank>=1388 && rank<=4446)
+r+="IIT INDORE ";
+if(rank>=2819 && rank<=6190)
+r+="IIT PATNA ";
+if(rank>=180 && rank<=8430)
+r+="IIT KHARAGPUR ";
+if(rank>=2486 && rank<=5146)
+r+="IIT MANDI ";
+if(rank>=32 && rank<=5819)
+r+="IIT CHENNAI ";
+if(rank>=2845 && rank<=7222)
+r+="IIT DHANBAD ";
+if(rank>=614 && rank<=9290)
+r+="IIT GANDHINAGAR ";
+if(rank>=1276 && rank<=4152)
+r+="IIT ROPAR ";
+if(rank>9290)
+r+="It seems like you won't get IIT this year...";
+}
+else if(choice=="OBC")
+{
+if(rank>=7 && rank<=1500)
+r+="IIT DELHI ";
+if(rank>=1 && rank<=3000)
+r+="IIT BOMBAY ";
+if(rank>=521 && rank<=4200)
+r+="IIT GANDHINAGAR ";
+if(rank>=366 && rank<=4100)
+r+="IIT GUWAHATI ";
+if(rank>=196 && rank<=4566)
+r+="IIT VARANASI ";
+if(rank>=632 && rank<=4342)
+r+="IIT HYDERABAD ";
+if(rank>=40 && rank<=3722)
+r+="IIT KANPUR ";
+if(rank>=366 && rank<=4895)
+r+="IIT JODHPUR ";
+if(rank>=188 && rank<=2446)
+r+="IIT INDORE ";
+if(rank>=819 && rank<=3190)
+r+="IIT PATNA ";
+if(rank>=180 && rank<=4430)
+r+="IIT KHARAGPUR ";
+if(rank>=586 && rank<=3146)
+r+="IIT MANDI ";
+if(rank>=12 && rank<=3819)
+r+="IIT CHENNAI ";
+if(rank>=845 && rank<=3222)
+r+="IIT DHANBAD ";
+if(rank>=314 && rank<=3290)
+r+="IIT GANDHINAGAR ";
+if(rank>=376 && rank<=2152)
+r+="IIT ROPAR ";
+if(rank>4895)
+r+="It seems like you won't get IIT this year...";
+}
+else if(choice=="SC")
+{
+if(rank>=1 && rank<=500)
+r+="IIT DELHI ";
+if(rank>=1 && rank<=700)
+r+="IIT BOMBAY ";
+if(rank>=121 && rank<=900)
+r+="IIT GANDHINAGAR ";
+if(rank>=166 && rank<=1100)
+r+="IIT GUWAHATI ";
+if(rank>=56 && rank<=1166)
+r+="IIT VARANASI ";
+if(rank>=12 && rank<=1342)
+r+="IIT HYDERABAD ";
+if(rank>=4 && rank<=922)
+r+="IIT KANPUR ";
+if(rank>=166 && rank<=995)
+r+="IIT JODHPUR ";
+if(rank>=88 && rank<=1446)
+r+="IIT INDORE ";
+if(rank>=219 && rank<=1190)
+r+="IIT PATNA ";
+if(rank>=80 && rank<=1430)
+r+="IIT KHARAGPUR ";
+if(rank>=186 && rank<=1146)
+r+="IIT MANDI ";
+if(rank>=12 && rank<=1319)
+r+="IIT CHENNAI ";
+if(rank>=245 && rank<=1222)
+r+="IIT DHANBAD ";
+if(rank>=114 && rank<=1290)
+r+="IIT GANDHINAGAR ";
+if(rank>=276 && rank<=1152)
+r+="IIT ROPAR ";
+if(rank>1446)
+r+="It seems like you won't get IIT this year...";
+}
+else if(choice=="ST")
+{
+if(rank>=1 && rank<=500)
+r+="IIT DELHI ";
+if(rank>=1 && rank<=700)
+r+="IIT BOMBAY ";
+if(rank>=121 && rank<=900)
+r+="IIT GANDHINAGAR ";
+if(rank>=166 && rank<=1100)
+r+="IIT GUWAHATI ";
+if(rank>=56 && rank<=1166)
+r+="IIT VARANASI ";
+if(rank>=12 && rank<=1342)
+r+="IIT HYDERABAD ";
+if(rank>=4 && rank<=922)
+r+="IIT KANPUR ";
+if(rank>=166 && rank<=995)
+r+="IIT JODHPUR ";
+if(rank>=88 && rank<=1446)
+r+="IIT INDORE ";
+if(rank>=219 && rank<=1190)
+r+="IIT PATNA ";
+if(rank>=80 && rank<=1430)
+r+="IIT KHARAGPUR ";
+if(rank>=186 && rank<=1146)
+r+="IIT MANDI ";
+if(rank>=12 && rank<=1319)
+r+="IIT CHENNAI ";
+if(rank>=245 && rank<=1222)
+r+="IIT DHANBAD ";
+if(rank>=114 && rank<=1290)
+r+="IIT GANDHINAGAR ";
+if(rank>=276 && rank<=1152)
+r+="IIT ROPAR ";
+if(rank>1446)
+r+="It seems like you won't get IIT this year...";
+}
+return r;
+}
+};
+int main()
+{
+Algorithm a;
+CollegeList c;
+int rank=a.callAlgo_rank();
+string choice=a.choice();
+string College_name=c.college(rank,choice);
+a.dispCollege(College_name);
+}
